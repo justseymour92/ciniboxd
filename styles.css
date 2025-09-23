@@ -1,7 +1,7 @@
 
 body {
     font-family: arial, sans-serif;
-    background-color: #627a9f;
+    background-color: #0a101a;
     color: white;
     margin: 0;
     padding: 0;
@@ -20,12 +20,24 @@ p {
 }
 
 .nav a:hover {
-    color: #8fe3a2;
+    color: #b406f4;
     margin-right:  15px;
     text-decoration:  none;
 }
-.nav a:hover {
+a:link {
+    color: #c60ee7; /* normal link*/
+}
+
+a:visited {
+    color: #e70527;  /*keep viseted links same red*/
+}
+
+a:hover {
     text-decoration:  underline;
+}
+
+a:active {
+    color: #8404f0; /* when clicked*/
 }
 .section {
     padding: 20px;
