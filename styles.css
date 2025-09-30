@@ -120,3 +120,15 @@ input[type="text"], input[type="password"]{
     border-radius: 4px;
     margin-right: 10px;
 }
+
+/*Table styling */
+table, th, td {
+    border: 1px solid #8fe3a2;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+}
+table {
+    margin: 20px auto;
+    width: 80%
+}
