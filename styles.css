@@ -1,4 +1,9 @@
 
+*,
+*::before,*::after {
+    box-sizing:border-box;
+}
+
 body {
     font-family: arial, sans-serif;
     background-color: #0a101a;
@@ -21,6 +26,16 @@ h1, h2 {
 
 p {
     line-height:  1.5;
+    
+    
+}
+
+
+.nav {
+    display: flex;
+    justify-content: center; /*centes the links*/
+    gap: 15px; /* adds spacing between links */
+    margin-bottom: 20px; 
 }
 .nav a:hover{
     background-color:  #0c1117;
