@@ -37,11 +37,27 @@ p {
     gap: 15px; /* adds spacing between links */
     margin-bottom: 20px; 
 }
-.nav a:hover{
-    background-color:  #0c1117;
-    padding: 10px;
+
+.nav a {
+    color: #8fe3a2;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid trasparent;
+    font-weight: normal;
 }
 
+.nav a:hover {
+    background-color: #0c1117;
+    border-color: #8fe3a2;
+    text-decoration: underline;
+    
+}
+
+.nav a:hover {
+    background-color: #0c1117;
+    border-color: #8fe3a2;
+    text-decoration: underline;
+}
 .nav a:hover {
     color: #b406f4;
     margin-right:  15px;
