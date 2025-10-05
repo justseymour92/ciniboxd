@@ -53,16 +53,7 @@ p {
     
 }
 
-.nav a:hover {
-    background-color: #0c1117;
-    border-color: #8fe3a2;
-    text-decoration: underline;
-}
-.nav a:hover {
-    color: #b406f4;
-    margin-right:  15px;
-    text-decoration:  none;
-}
+
 a:link {
     color: #c60ee7; /* normal link*/
 }
@@ -131,4 +122,95 @@ table, th, td {
 table {
     margin: 20px auto;
     width: 80%
+}
+
+/* keep all page content a good width width*/
+.container {
+    max-width: 1400px;      /*desktop width cap */
+    width: 100%;            /* makes sure it can fill full width if needed */
+    margin-left: auto;      /* centers the container */
+    margin-right: auto;     /* centers the containers */
+    padding: 1rem 2rem;     /* even spacing on both sides */
+    box-sizing: border-box; /*keeps padding inside the total width */
+}
+/* keep the page the height  of the screen and push footer to the bottom */
+.container {
+    min-height: 100svh;         /* fills the full visible height */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;           /* pushes footer to the bottom */
+}
+   
+
+/* readind width for long paragraphs */
+.container p {
+    max-width: 65ch;        /* 65 characters per line */
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+/* ----- mobile and tablet responsive-------*/
+
+/* reset small quirks so centering works everywherer */
+html, body {margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+
+/* make images scale to the screen */
+img { max-width: 100%; height: auto; display: block; }
+
+/* page container: wide on desktop, comfy on smaller screens */
+.container { max-width: 1200px; width: 100%; margin: 0; padding: 1rem 2rem; }
+
+/*nav: row that can wrap, links easy to tap */
+.nav { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; justify-content: center;}
+.nav a { padding: 0.45rem 0.7rem; }
+
+/* login form: one row on desktop, adapts below */
+.login-form {
+    display: grid;
+    grid-template-columns: auto 14rem auto 14rem auto; /* label, input, label, input, button */
+    gap: 0.5rem 0.75rem;
+    align-items: center;
+}
+
+/* tables well on narrow screens */
+table { width: 80%; margin: 20px auto; }
+table, th, td { border-collapse: collapse; }
+
+/* keep paragraphs readable on any device */
+.container p {max-width: 65; line-height: 1.6; margin-bottom: 1em; }
+
+/*---------tablet (<900px) ----------- */
+@media (max-width: 900px) {
+    .container {padding: 1rem; }
+    .login-form {
+        grid-template-columns: auto 1fr;    /* label + input pairs */
+    }
+    .login-form input[type="submit"] {
+        grid-column: 1 / -1;                /* button on its own row */
+        justify-self: start;
+    }
+    table { width: 100%; }                  /* let tables breathe */
+}
+
+/* ------ phone (600px) ------------- */
+@media (max-width: 600px) {
+    .container { padding: 0.75rem; }
+    .nav {gap: 0.5rem 0.75rem; }            /*tighter gaps */
+    .section { padding: 0.75rem; }
+    
+    /* stack the login form vertically */
+    .login-form { grid-template-columns: 1fr; }
+    
+    /* big enough tap targets for thumb */
+    button, input[type-submit] {
+        min-height: 44px;
+        padding: 0.6rem 1rem;
+    }
+    
+    /* smaller table padding on phones */
+    table, th,td { padding: 6px; }
 }
