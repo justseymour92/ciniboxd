@@ -325,3 +325,131 @@ body {
     font-size: 0.85rem;
     color: #ccc;
 }
+
+/* film table styling */
+.film-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 1rem;
+    color: #eee;
+    background-color: #111;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0, 255, 100, 0.2);
+}
+.film-table th, .film-table td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+}
+
+.film-table th {
+    background-color: #1a1a1a;
+    color: #9effc7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.film-table tr:nth-child(even) {
+    background-color: #1e1e1e;
+}
+
+.film-table tr:hover {
+    background-color: #262626;
+    transition: background 0.3s ease;
+}
+
+.film-table td:first-child:hover {
+    color: #9effc7;
+    cursor: pointer;
+    text-shadow: 0 0 8px #9effc7;
+}
+
+/* lists page heading */
+.list-wrap, .lists-table-wrap {
+    max-width: 1000px;
+    margin: 32px auto;
+    text-align: center;
+}
+.lists-wrap h2, .lists-table-wrap h2 {
+    color: #9effc7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+/* grid of list cards */
+.list-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+.list-card {
+    background: #121212;
+    border: 1px solid #1f1f1f;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: left;
+    box-shadow: 0 6px 16px rgba(0,0,0,.35);
+    transition: trasform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.list-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,.45);
+    border-color: #2a2a2a;
+}
+.list-card h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.05rem;
+}
+.list-card p {
+    margin: 0 0 10px 0;
+    color: #cfcfcf;
+    line-height: 1.4;
+}
+/* small pill tags */
+.tags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.tags li {
+    background: #0f2e22;
+    color: #9effc7;
+    border: 1px solid #224b3a;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: .8rem;
+}
+
+/*popular list table*/
+.lists-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+    color: #eee;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0,255,100,.2);
+}
+.lists-table th, .lists-table td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: left;
+}
+.lists-table th {
+    background: #1a1a1a;
+    color: #9effc7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.lists-table tr:nth-child(even) { background: #1e1e1e; }
+.lists-table tr:hover { background: #262626; transition: background .25s; }
+
+/* responsive tweak */
+@media (max-width: 600px) {
+    .lists-table th:nth-child(3),
+    .lists-table td:nth-child(3) { display: none; } /*hids films count on small screens */
+}
