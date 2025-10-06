@@ -1,7 +1,12 @@
 
-*,
-*::before,*::after {
-    box-sizing:border-box;
+*, *::before, *::after {
+    box-sizing: border-box
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;         /* stops horizontal scroll and right side space */
+    width: 100%;                /* ensures full width */
 }
 
 body {
@@ -130,8 +135,9 @@ table {
     width: 100%;            /* makes sure it can fill full width if needed */
     margin-left: auto;      /* centers the container */
     margin-right: auto;     /* centers the containers */
-    padding: 1rem 2rem;     /* even spacing on both sides */
+    padding: 0 1rem;     /* even spacing on both sides */
     box-sizing: border-box; /*keeps padding inside the total width */
+    text-align: center;     /* centers all text inside the container */
 }
 /* keep the page the height  of the screen and push footer to the bottom */
 .container {
@@ -149,7 +155,8 @@ table {
 .container p {
     max-width: 65ch;        /* 65 characters per line */
     line-height: 1.6;
-    margin-bottom: 1em;
+    margin: 0.5rem auto;    /* ceters the block its self */
+    text-align: center;     /* centres the text inside */
 }
 
 /* ----- mobile and tablet responsive-------*/
@@ -213,4 +220,33 @@ table, th, td { border-collapse: collapse; }
     
     /* smaller table padding on phones */
     table, th,td { padding: 6px; }
+
 }
+
+/* desktop use most of the width */
+@media (min-width: 1200px) {
+    .container { max-width: none; padding: 0 1rem; }   /*removes cap  */
+    .section p { max-width: 90ch; }
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-position: inside;        /* brings bullets into the text block */
+    text-align: center;                 /* centers the bullet text */
+    padding: 0;                         /* removes default left indent */
+    margin: 1rem auto;                  /* centers the whole list */
+}
+
+video, iframe {
+    display: block;                     /* puts it on its own line */
+    margin: 1rem auto;                  /* centres horizontally */
+    max-width: 100%;                    /* makes it responsive */
+    height: auto;                       /* keeps proportions correct */
+}
+
