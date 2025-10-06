@@ -253,3 +253,75 @@ video, iframe {
 /*NEOSKY visuals */
 .neosky { background-color: #000; transition: background-color 0.5 ease;
 }
+
+body {
+    background: linear-gradient(to right, #000000 0%, #0c0c0c 10%, #0c0c0c 90%, #000000 100%);
+        color: #fff;
+}
+
+.featured {
+    text-align: center;
+    margin: 40px 0;
+}
+.featured h2 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #9effc7;
+}
+
+/* card layout */
+.poster-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap
+}
+
+/* general film card style */
+.film-card {
+    width: 150px;
+    height: 225px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    color: white;
+    text-align: left;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s, box-shadow 0.3;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+/* hover glow */
+.film-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(158, 255, 199, 0.7);
+}
+
+/*indivual card color theme */
+.inception {
+    background: linear-gradient(to bottom, #001f3f, #111);
+}
+.interstellar {
+    background: linear-gradient(to bottom, #3a3a9f, #000);
+}
+.dune {
+    background: linear-gradient(to bottom, #7b5f25, #000);
+}
+.joker {
+    background: linear-gradient(to bottom, #3a0d0d, #000);
+}
+
+.film-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+.film-card p {
+    margin: 3px 0 0;
+    font-size: 0.85rem;
+    color: #ccc;
+}
