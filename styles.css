@@ -250,3 +250,6 @@ video, iframe {
     height: auto;                       /* keeps proportions correct */
 }
 
+/*NEOSKY visuals */
+.neosky { background-color: #000; transition: background-color 0.5 ease;
+}
