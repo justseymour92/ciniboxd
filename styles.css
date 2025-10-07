@@ -453,3 +453,91 @@ body {
     .lists-table th:nth-child(3),
     .lists-table td:nth-child(3) { display: none; } /*hids films count on small screens */
 }
+
+/* center any single image and keep it responsive */
+.center-image {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+    /*cap size poster on huge screens */
+    max-height: 70vh;
+    object-fit: cover;
+}
+/* review card width and centering */
+.review-card {
+    max-width: 900px;       /*keeps the review readable */
+    margin: 0 auto;         /* enters the card block */
+}
+
+/* center lists with bullets */
+.center-list {
+    list-style-position: inside;
+    text-align: center;
+    padding: 0;
+    margin: 0.75rem auto;
+}
+.center-list li::marker { color: #8fe3a2; }
+
+/* tidy table in the review */
+table.score {
+    margin: 16px auto;
+    width: auto;
+}
+/* responsive youtube/video embed */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;     /*16.9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 1rem auto;
+}
+.video-container ifame {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* highlight active nav item */
+.nav a.active {
+    color: #22c55e;
+    border-bottom: 2px solid #22c55e;
+}
+/* review page styled table */
+.style-table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 60%;
+    background-color: #0c1117;
+    color: #8fe3a2;
+    border: 1px solid #8fe3a2;
+    box-shadow: 0 0 10px rgba(143, 227, 162, 0.3);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.styled-table th {
+    background-color: #0a0a0a;
+    color: #8fe3a2;
+    padding: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #8fe3a2;
+}
+
+.styler-table td {
+    padding: 10px;
+    color: #ffffff;
+    border-bottom: 1px solid #8fe3a2;
+}
+
+.styled-table tr:last-child td {
+    border-bottom: none;
+}
+
+.styled-table tr:hover {
+    background-color: rgba(143, 227, 162, 0.1);
+    transition: background-color 0.3s ease;
+}

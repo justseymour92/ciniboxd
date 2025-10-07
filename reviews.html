@@ -14,19 +14,23 @@
             <h1>Ciniboxd</h1>
             <p>Your place to track and review films</p>
         </header>
+            
          <div class="nav">
             <a href="./index.html">home</a>
             <a href="./films.html">films</a>
-            <a href="./reviews.html">reviews</a>
+            <a href="./reviews.html" class="active">reviews</a>
             <a href="./lists.html">lists</a>
             <a href="./profile.html">profile</a>
         </div>
-
-        <h1>Reviews Page</h1>
-        <p><a href="index.html">Back to Home</a></p>
-        <img src="images/IMG_interstellar.webp" width="500" alt="the official poster of the film interstellar" />
-        <h1>review of interstellar</h1>
-
+        <!-- review card -->
+        <section class="section review-card">
+            
+            <a href=".index.html">Back to Home</a>
+            
+            <!-- poster -->
+            <img src="images/IMG_interstellar.webp" alt="The Offical poster of the film interstellar" class="center-image">
+            
+            <h1>review of interstellar</h1>
         <p>
             saw this in IMAX and i swear my soul left my body somewhere around saturn and has yet to return. hans zimmer
             hit one note on that organ and my ribcage became a subwoofer. i wasn't watching a movie i was being baptized
@@ -38,30 +42,34 @@
             in IMAX deserves his own oscar. nolan should've just released that scene on a loop and i'd still clap
             10/10,would let IMAX rearrange my organs again.
         </p>
-
-        <ul>
+        <ul class="center-list">
             <li>directed by christopher nolan</li>
         </ul>
-
-        <table border="1">
+        
+        <table class="styled-table">
             <tr>
                 <th>overall score</th>
             </tr>
             <tr>
-                <td>stars 5</td>
+                <td>⭐ 5 / 5</td>
             </tr>
         </table>
-
-        <iframe
-            width="560"
-            height="315"
+        <!-- responsive trailer-->
+        <div class="video-container">
+            <iframe
             src="https://www.youtube.com/embed/zSWdZVtXT7E?si=ybJAgy9ktI98xw_O"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen></iframe>
+            allowfullscreen>
+            </iframe>
             </div> <!--end of container -->
          <script src="scripts.js"></script>
+            </section>
+    <div class="footer">
+        &copy; 2025 Ciniboxd
+            </div>
+        </div>
     </body>
 </html>
