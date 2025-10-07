@@ -203,8 +203,8 @@ table, th, td { border-collapse: collapse; }
     table { width: 100%; }                  /* let tables breathe */
 }
 
-/* ------ phone (768px) ------------- */
-@media (max-width: 768px) {
+/* ------ phone (600px) ------------- */
+@media (max-width: 600px) {
     .container { padding: 0.75rem; }
     .nav {
         display: flex;                  /* keep it flex */
@@ -463,7 +463,7 @@ body {
 .lists-table tr:hover { background: #262626; transition: background .25s; }
 
 /* responsive tweak */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .lists-table th:nth-child(3),
     .lists-table td:nth-child(3) { display: none; } /*hids films count on small screens */
 }
