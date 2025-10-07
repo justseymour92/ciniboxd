@@ -219,6 +219,31 @@ table, th, td { border-collapse: collapse; }
             text-decoration: none;
             border-bottom: 1px solid #222;
         }
+        
+        main,
+        section,
+        .container {
+            margin-left: 190px;
+            width: calc(100% - 190px);      /* stops cutoff on right */
+        }
+        .featured-films,
+        .lists-grid,
+        .profile-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        
+        .card, .film-card, .review-vard {
+            flex: 1 1 48%;
+            max-width: 48%;
+        }
+        
+        .table-wrap { overflow-x: auto; }
+
+        
+        
+        
         .nav a:hover { background: #e50914; color: #fff;}
 
     /* push content to the right side */
