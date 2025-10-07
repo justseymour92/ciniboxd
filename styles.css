@@ -206,7 +206,21 @@ table, th, td { border-collapse: collapse; }
 /* ------ phone (768px) ------------- */
 @media (max-width: 768px) {
     .container { padding: 0.75rem; }
-    .nav {gap: 0.5rem 0.75rem; }            /*tighter gaps */
+    .nav {
+        display: flex;                  /* keep it flex */
+        flex-direction: column;         /* makes the row a column */
+        align-items: center;            /* centers the column */
+        flex-wrap: nowrap;              /* avoid wrapping weird */
+        gap: 0.5rem 0;                  /*tidy space between links */
+        padding: 0.5rem 0;
+    }
+    .nav a {
+        display: block;                 /* each link is a full width row */
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #222;  /* divider */
+    }
     .section { padding: 0.75rem; }
     
     /* stack the login form vertically */
