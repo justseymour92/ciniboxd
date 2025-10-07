@@ -192,15 +192,48 @@ table, th, td { border-collapse: collapse; }
 
 /*---------tablet (<900px) ----------- */
 @media (max-width: 900px) {
-    .container {padding: 1rem; }
+    /* smaller text and padding */
+    body {
+        font-size: 16;
+    }
+    .container {
+        padding: 1rem;
+        max-width: 900;
+    }
+    
+    /* nav horizontal with tighter spacing */
+    .nav {
+        display: flex;
+        flex-direction: row;        /* stays horizontal */
+        flex-wrap: wrap;            /* moves it to 2 rows if needed */
+        justify-content: center;
+        gap: 10px;
+        padding: 0.5rem 1rem;
+    }
+    /* login form adjust to fit smaller screen */
     .login-form {
-        grid-template-columns: auto 1fr;    /* label + input pairs */
+        grid-template-columns: auto 1fr;
+        gap: 0.5rem 0.75rem;
+        align-items: center;
     }
     .login-form input[type="submit"] {
-        grid-column: 1 / -1;                /* button on its own row */
+        grid-column: 1 / -1;        /*button spans full width */
         justify-self: start;
     }
-    table { width: 100%; }                  /* let tables breathe */
+    table {
+        width: 100%;
+        font-size: 0.95;
+    }
+    
+    /*small top/bottom space sround sections */
+    section {
+        padding: 0.75rem 0;
+    }
+    /* images smaller on tablet */
+    img, iframe, video {
+        max-width: 95%;
+        height: auto;
+    }
 }
 
 /* ------ phone (600px) ------------- */
