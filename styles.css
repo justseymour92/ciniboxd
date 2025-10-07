@@ -541,3 +541,18 @@ table.score {
     background-color: rgba(143, 227, 162, 0.1);
     transition: background-color 0.3s ease;
 }
+/* profile */
+.profile-card {max-width: 900px; margin: 0 auto; }
+
+/* buttons used on profiles links */
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0.25rem;
+    background: #22c55e;
+    color: #0b0e13;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.btn:hover { filter: brightness(0.95);}

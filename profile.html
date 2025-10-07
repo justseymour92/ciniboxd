@@ -20,26 +20,41 @@
             <a href="./films.html">films</a>
             <a href="./reviews.html">reviews</a>
             <a href="./lists.html">lists</a>
-            <a href="./profile.html">profile</a>
+            <a href="./profile.html" class="active">profile</a>
         </div>
-
-        <h1>Profile Page</h1>
-        <p><a href="index.html">Back to Home</a></p>
-        <form>
-            <label for="username">Enter Your name:</label>
-            <input type="text" id="username" />
-            <input type="submit" value="submit" />
-            <label for="email">Email Address:</label>
-            <input type="text" id="email" />
-            <input type="submit" value="submit" />
-            <label for="pass">Password:</label>
-            <input type="password" id="pass" /><br />
-
-            <label for="agree">I agree:</label>
-            <input type="checkbox" id="agree" /><br />
-
-            <input type="submit" value="login" />
-        </form>
+        <!--profile card -->
+        <section class="section profile-card">
+            
+            <h1>sean / @Ciniboxd_sean</h1>
+            <p>Movie nut. likes sci-fi epics, 90s action and anything with great sound design.
+            logging films, writing daft reviews, and building Ciniboxd.</p>
+            
+            <ul class="center-list">
+                <li>joined: 2025</li>
+                <li>location: uk</li>
+                <li>favourite genre: sci-fi, action, animation</li>
+            </ul>
+            <!-- quick stats -->
+            <table class="styled-table">
+                <tr>
+                    <th>Films logged</th>
+                    <th>Reviews</th>
+                    <th>Watchlist</th>
+                    <th>Average rating</th>
+                </tr>
+                <tr>
+                    <td>128</td>
+                    <td>34</td>
+                    <td>57</td>
+                    <td>4.1</td>
+                </tr>
+            </table>
+        <!-- links -->
+        <p>
+            <a class="btn" href="./lists.html">view lists</a>
+            <a class="btn" href="./reviews.html">read reviews</a>
+            </p>
+            </section>
         <h1>your profile</h1>
         <p>welcome back to ciniboxd! here you can keep track of all your activity, reviews and watchlists.</p>
 
@@ -71,6 +86,10 @@
             <li><b>movies that made me cry</b></li>
             <li><b>90s action favorites</b></li>
         </ul>
+            <!-- footer -->
+            <div class="footer">
+                &copy; 2025 Ciniboxd
+            </div>
             </div> <!--end of container -->
          <script src="scripts.js"></script>
     </body>
