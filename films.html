@@ -2,62 +2,70 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Films - ciniboxd</title>
         <link rel="icon" type="image/png" href="images/filmreel.png" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-         <!-- everything on this page goes inside this container -->
+        <!-- everything on this page goes inside this container -->
         <div class="container">
-        <header class="banner">
-            <h1>Ciniboxd</h1>
-            <p>Your place to track and review films</p>
-        </header>
-        <div class="nav">
-            <a href="./index.html">home</a>
-            <a href="./films.html">films</a>
-            <a href="./reviews.html">reviews</a>
-            <a href="./lists.html">lists</a>
-            <a href="./profile.html">profile</a>
+            <header class="banner">
+                <h1>Ciniboxd</h1>
+                <p>Your place to track and review films</p>
+            </header>
+            <div class="nav">
+                <a href="./index.html">home</a>
+                <a href="./films.html">films</a>
+                <a href="./reviews.html">reviews</a>
+                <a href="./lists.html">lists</a>
+                <a href="./profile.html">profile</a>
+            </div>
+            <h1>Films page</h1>
+            <p>
+                Welcome to the films section of Ciniboxd! This page is desinged to help you keep track of every movie
+                you have watched and discover new ones to add to your collection. Here you can browse through your
+                personal film diary, see what titles you have recently logged, and revisit older favourites. Each film
+                entry can be expanded with your own rating and review, making it east to share your opinions with
+                others. The films page is also wherer you can compare your watching habits with friends, discover hidden
+                gems and explore popular titles. Over time, your film log becomes a complete record of your journey
+                through cinema.
+            </p>
+            <p><a href="index.html">back to Home</a></p>
+
+            <!-- Film Table -->
+            <h2>Film Log</h2>
+            <table class="film-table">
+                <tr>
+                    <th>Film Title</th>
+                    <th>Year</th>
+                    <th>Rating</th>
+                </tr>
+                <tr>
+                    <td>Interstellar</td>
+                    <td>2014</td>
+                    <td>★★★★★</td>
+                </tr>
+                <tr>
+                    <td>Inception</td>
+                    <td>2010</td>
+                    <td>★★★★★</td>
+                </tr>
+                <tr>
+                    <td>Dune</td>
+                    <td>2021</td>
+                    <td>★★★★☆</td>
+                </tr>
+                <tr>
+                    <td>Joker</td>
+                    <td>2019</td>
+                    <td>★★★★★</td>
+                </tr>
+            </table>
+
+            <p><a href="index.html">back to home</a></p>
         </div>
-        <h1>Films page</h1>
-        <p>
-            Welcome to the films section of Ciniboxd! This page is desinged to help you keep track of every movie you
-            have watched and discover new ones to add to your collection. Here you can browse through your personal film
-            diary, see what titles you have recently logged, and revisit older favourites. Each film entry can be
-            expanded with your own rating and review, making it east to share your opinions with others. The films page
-            is also wherer you can compare your watching habits with friends, discover hidden gems and explore popular
-            titles. Over time, your film log becomes a complete record of your journey through cinema.
-        </p>
-        <p><a href="index.html">back to Home</a></p>
-
-        <!-- Film Table -->
-        <h2>Film Log</h2>
-        <table>
-            <tr>
-                <th>Film Title</th>
-                <th>Year</th>
-                <th>Rating</th>
-            </tr>
-            <tr>
-                <td>Interstellar</td>
-                <td>2014</td>
-                <td>*****</td>
-            </tr>
-            <tr>
-                <td>Inception</td>
-                <td>2010</td>
-                <td>****</td>
-            </tr>
-            <tr>
-                <td>The Dark Knight</td>
-                <td>2008</td>
-                <td>*****</td>
-            </tr>
-        </table>
-
-        <p><a href="index.html">back to home</a></p>
-            </div> <!--end of container -->
+        <!--end of container -->
+        <script src="scripts.js"></script>
     </body>
 </html>
