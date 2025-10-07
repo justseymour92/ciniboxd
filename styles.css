@@ -190,111 +190,87 @@ table, th, td { border-collapse: collapse; }
 /* keep paragraphs readable on any device */
 .container p {max-width: 65; line-height: 1.6; margin-bottom: 1em; }
 
-/*---------tablet (<900px) ----------- */
-@media (max-width: 900px) {
-    /* smaller text and padding */
-    body {
-        font-size: 16;
-    }
-    .container {
-        padding: 1rem;
-        max-width: 900;
-    }
-    
-    /* nav horizontal with tighter spacing */
-    .nav {
-        display: flex;
-        flex-direction: column;        
-        align-items: flex-start;        /* align links to the left */
-        justify-content: flex-start;
-        width: 180px;
-        background-color: #111;
-        padding: 20px 10px;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 10;
-    }
-    
-    /* style the links inside */
-    .nav a {
-        display: block;
-        width: 100%;
-        color: #8fea32;
-        text-decoration: none;
-        padding: 10px 0;
-        border-bottom: 1px solid #222;
-    }
-    .nav a:hover {
-        background-color: #e50914;
-        color: #fff;
-    }
-    /* pushes page content to the right of the sidebar */
+    /*!-- Tablet (900px) -- */
+    @media screen and (max-width: 900px) {
+        /* general sizing */
+        body { font-size: 16px; }
+        .container { max-width: 900px; padding:  1rem; }
+
+        /* left sidebar */
+        .nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 180px;
+            height: 100vh;
+            background: #111;
+            padding: 20px 10px;
+            z-index: 10px;
+        }
+        .nav a {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            color: #8fea32;
+            text-decoration: none;
+            border-bottom: 1px solid #222;
+        }
+        .nav a:hover { background: #e50914; color: #fff;}
+
+    /* push content to the right side */
     main,
     section,
-    .container {
-        margin-left: 190px;
-    }
-    /* login form adjust to fit smaller screen */
+    .container { margin-left: 190px; }
+
     .login-form {
+        display: grid;
         grid-template-columns: auto 1fr;
         gap: 0.5rem 0.75rem;
         align-items: center;
     }
-    .login-form input[type="submit"] {
-        grid-column: 1 / -1;        /*button spans full width */
-        justify-self: start;
-    }
-    table {
-        width: 100%;
-        font-size: 0.95;
-    }
-    
-    /*small top/bottom space sround sections */
-    section {
-        padding: 0.75rem 0;
-    }
-    /* images smaller on tablet */
-    img, iframe, video {
-        max-width: 95%;
-        height: auto;
-    }
+    .login-form input[type="submit"] { grid-column: 1 / -1; justify-self: start;}
+    table { width: 100%; font-size: 0.95rem; }
+    img, iframe, video {max-width: 95%; height: auto;}
+    section { padding: 0.75 0; }
 }
 
-/* ------ phone (600px) ------------- */
-@media (max-width: 600px) {
-    .container { padding: 0.75rem; }
+    /* -- phone (768) -- */
+@media screen and (max-width: 768px) {
+    /* undo tablet sidebar and stack nav at top */
     .nav {
-        display: flex;                  /* keep it flex */
-        flex-direction: column;         /* makes the row a column */
-        align-items: center;            /* centers the column */
-        flex-wrap: nowrap;              /* avoid wrapping weird */
-        gap: 0.5rem 0;                  /*tidy space between links */
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        background: transparent;
         padding: 0.5rem 0;
+        gap: 0.5rem;
     }
     .nav a {
-        display: block;                 /* each link is a full width row */
+        display: block;
         width: 100%;
         text-align: center;
         padding: 10px 0;
-        border-bottom: 1px solid #222;  /* divider */
+        border-bottom: 1px solid #222;
     }
-    .section { padding: 0.75rem; }
+    /*remove tablet left margin so content is full width */
+    main,
+    section,
+    .container { margin-left: 0; }
     
-    /* stack the login form vertically */
-    .login-form { grid-template-columns: 1fr; }
+    /* phone sizing */
+    .container { padding: 0.75rem;}
+    img, iframe, video { max-width: 100%; height: auto; }
+    table { width: 100%; font-size: 14px; }
     
-    /* big enough tap targets for thumb */
-    button, input[type-submit] {
-        min-height: 44px;
-        padding: 0.6rem 1rem;
-    }
-    
-    /* smaller table padding on phones */
-    table, th,td { padding: 6px; }
-
 }
+
+
 
 /* desktop use most of the width */
 @media (min-width: 1200px) {
