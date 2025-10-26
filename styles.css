@@ -639,3 +639,41 @@ table.score {
     font-weight: 600;
 }
 .btn:hover { filter: brightness(0.95);}
+
+/************************* mobile layout fixes ***********************************/
+@media (max-width: 768px) {
+    /* make text areas full width on smaller screens */
+    .profile-card,
+    .profile-card P,
+    .profile-bio,
+    .about-section,
+    .profile-intro,
+    .review-page,
+    .review-content,
+    .review-card,
+    .review-text {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    /* normal paragraph wrapping */
+    .profile-card P,
+    .review-card P,
+    .review-content P {
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+    
+    /* prevents text from stacking vertically one word per line */
+    p, li{
+        line-height: 1.6;
+    }
+    
+    /* adds side padding so text isnt against screen edge */
+    body, .profile-card, .review-content {
+        padding: 0 10px;
+    }
+}
