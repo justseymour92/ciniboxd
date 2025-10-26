@@ -642,20 +642,27 @@ table.score {
 
 /************************* mobile layout fixes ***********************************/
 @media (max-width: 768px) {
-    /* make text areas full width on smaller screens */
+   /* force text containers to fullwidth */
     .profile-card,
-    .profile-card P,
     .profile-bio,
-    .about-section,
     .profile-intro,
     .review-page,
     .review-content,
     .review-card,
-    .review-text {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        text-align: center;
+    .review-text,
+    main, section, .content, .container {
+        display: block !important;
+        width: 100%, !important;
+        max-width: 100% !important;
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+        line-height: 1.6;
+    }
+    /* layout uses flex/grid, stacks on mobile */
+    .profile-row, .review-row, .grid, .flex,
+    .profile-grid, .review-grid {
+        display: block !important;      /* stops side by side squeezing */
     }
     
     /* normal paragraph wrapping */
