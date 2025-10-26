@@ -642,45 +642,27 @@ table.score {
 
 /************************* mobile layout fixes ***********************************/
 @media (max-width: 768px) {
-   /* force text containers to fullwidth */
-    .profile-card,
-    .profile-bio,
-    .profile-intro,
-    .review-page,
-    .review-content,
-    .review-card,
-    .review-text,
-    main, section, .content, .container {
-        display: block !important;
-        width: 100%, !important;
-        max-width: 100% !important;
-        white-space: normal !important;
-        word-break: normal !important;
-        overflow-wrap: break-word !important;
-        line-height: 1.6;
-    }
-    /* layout uses flex/grid, stacks on mobile */
-    .profile-row, .review-row, .grid, .flex,
-    .profile-grid, .review-grid {
-        display: block !important;      /* stops side by side squeezing */
-    }
-    
-    /* normal paragraph wrapping */
-    .profile-card P,
-    .review-card P,
-    .review-content P {
-        white-space: normal;
-        word-break: normal;
-        overflow-wrap: break-word;
-    }
-    
-    /* prevents text from stacking vertically one word per line */
-    p, li{
-        line-height: 1.6;
-    }
-    
-    /* adds side padding so text isnt against screen edge */
-    body, .profile-card, .review-content {
-        padding: 0 10px;
-    }
+   /* --- STOP per-letter wrapping on mobile --- */
+ .profile-card, .profile-bio, .profile-intro,
+ .review-page, .review-content, .review-card, .review-text {
+   width: 100% !important;
+   max-width: 100% !important;
+   margin: 0 auto !important;
+   padding-left: 12px;
+   padding-right: 12px;
+ }
+ /* force normal horizontal text flow and normal word wrapping */
+ .profile-card p, .review-content p,
+ .profile-card li, .review-content li,
+ .profile-card h1, .profile-card h2, .profile-card h3,
+ .review-content h1, .review-content h2, .review-content h3,
+ p, li, h1, h2, h3 {
+   white-space: normal !important;
+   word-break: keep-all !important;     
+   overflow-wrap: anywhere !important;  /* allow wrapping at spaces/long words */
+   writing-mode: horizontal-tb !important;
+   text-orientation: mixed !important;
+   line-height: 1.6;
+ }
+
 }
