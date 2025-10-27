@@ -642,7 +642,6 @@ table.score {
 
 /************************* mobile layout fixes ***********************************/
 @media (max-width: 768px) {
-   /* --- STOP per-letter wrapping on mobile --- */
  .profile-card, .profile-bio, .profile-intro,
  .review-page, .review-content, .review-card, .review-text {
    width: 100% !important;
