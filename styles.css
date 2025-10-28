@@ -630,58 +630,6 @@ table.score {
     font-weight: 600;
 }
 .btn:hover { filter: brightness(0.95);}
-
-/************************* mobile layout fixes ***********************************/
-@media (max-width: 768px) {
-    
-    /*widen all main text containers */
-    .profile-card,
-    .profile-bio,
-    .profile-intro,
-    .review-page,
-    .review-content,
-    .review-card,
-    .review-text,
-    .home-intro,
-    .films-intro,
-    .lists-intro,
-    .section,
-    .content,
-    .container {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 auto !important;
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-    
-    /* restore normal horizontal text flow */
-    p, li, h1, h2, h3 {
-        white-space: normal !important;
-        word-break: keep-all !important;
-        overflow-wrap: anywhere !important;
-        writing-mode: horizontal-tb !important;
-        text-orientation: mixed !important;
-        line-height: 1.6;
-    }
-    
- 
- /* force normal horizontal text flow and normal word wrapping */
- .profile-card p, .review-content p,
- .profile-card li, .review-content li,
- .profile-card h1, .profile-card h2, .profile-card h3,
- .review-content h1, .review-content h2, .review-content h3,
- p, li, h1, h2, h3 {
-   white-space: normal !important;
-   word-break: keep-all !important;     
-   overflow-wrap: anywhere !important;  /* allow wrapping at spaces/long words */
-   writing-mode: horizontal-tb !important;
-   text-orientation: mixed !important;
-   line-height: 1.6;
- }
-
-}
-
 /* table fix */
 .table-wrap {
     width: 100%;
@@ -700,5 +648,59 @@ table.score {
     .styled-table td {
         padding: 8px 6px;
         font-size: 0.9rem;
+    }
+}
+/* paragrath fix */
+.home-intro,
+.films-intro,
+.lists-intro,
+.sections,
+.content,
+.container,
+.center-text,
+.lead,
+.hero,
+.intro {
+    width: 100% !important;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.home-intro p,
+.films-intro p,
+.lists-intro p,
+.section p,
+.content p,
+.container p,
+.center-text p,
+.lead p,
+.hero p,
+.intro p,
+p {
+    display: block !important;
+    width: 100% !important;
+    max-width: 65ch !important;
+    margin: 0 auto 1rem !important;
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: anywhere !important;
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+}
+
+@media (max-width: 768px){
+    .home-intro p,
+    .films-intro p,
+    .lists-intro p,
+    .section p,
+    .content p,
+    .container p,
+    .center-text p,
+    .lead p,
+    .hero p,
+    .intro p {
+        max-width: 100% !important;
     }
 }
