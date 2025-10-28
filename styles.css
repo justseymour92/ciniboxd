@@ -52,7 +52,7 @@ p {
 }
 
 .nav a:hover {
-    background-color: #0a0e12;
+    background-color: #ffffff;
     border-color: #b8ffc9;
     text-decoration: underline;
     
@@ -81,7 +81,7 @@ a:active {
 .footer {
     text-align: center;
     padding: 10px;
-    background-color: #0a0e12;
+    background-color: #ffffff;
     margin-top: 20px;
     color: #b8ffc9;
 }
@@ -624,7 +624,7 @@ table.score {
     padding: 8px 14px;
     margin: 0.25rem;
     background: #22c55e;
-    color: #0b0e13;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
