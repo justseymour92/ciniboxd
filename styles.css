@@ -329,14 +329,6 @@ video, iframe {
     height: auto;                       /* keeps proportions correct */
 }
 
-/*NEOSKY visuals */
-.neosky { background-color: #000; transition: background-color 0.5 ease;
-}
-
-body {
-    background: linear-gradient(to right, #000000 0%, #0c0c0c 10%, #0c0c0c 90%, #000000 100%);
-        color: #fff;
-}
 
 .featured {
     text-align: center;
