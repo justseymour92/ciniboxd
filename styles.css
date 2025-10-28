@@ -677,3 +677,26 @@ table.score {
         font-size: 0.9rem;
     }
 }
+/* text wrapping fix */
+*,
+*::before,
+*::after {
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: anywhere !important;
+    writing-mode: horizontal-tb !important;
+    text-orientation: mixed !important;
+}
+
+/* main text block take full width */
+body, main, section, article, div, p {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* tidy spacing for readability */
+p {
+    line-height: 1.6;
+    margin: 0 0 1rem;
+}
