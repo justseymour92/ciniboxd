@@ -633,14 +633,39 @@ table.score {
 
 /************************* mobile layout fixes ***********************************/
 @media (max-width: 768px) {
- .profile-card, .profile-bio, .profile-intro,
- .review-page, .review-content, .review-card, .review-text {
-   width: 100% !important;
-   max-width: 100% !important;
-   margin: 0 auto !important;
-   padding-left: 12px;
-   padding-right: 12px;
- }
+    
+    /*widen all main text containers */
+    .profile-card,
+    .profile-bio,
+    .profile-intro,
+    .review-page,
+    .review-content,
+    .review-card,
+    .review-text,
+    .home-intro,
+    .films-intro,
+    .lists-intro,
+    .section,
+    .content,
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    
+    /* restore normal horizontal text flow */
+    p, li, h1, h2, h3 {
+        white-space: normal !important;
+        word-break: keep-all !important;
+        overflow-wrap: anywhere !important;
+        writing-mode: horizontal-tb !important;
+        text-orientation: mixed !important;
+        line-height: 1.6;
+    }
+    
+ 
  /* force normal horizontal text flow and normal word wrapping */
  .profile-card p, .review-content p,
  .profile-card li, .review-content li,
@@ -676,27 +701,4 @@ table.score {
         padding: 8px 6px;
         font-size: 0.9rem;
     }
-}
-/* text wrapping fix */
-*,
-*::before,
-*::after {
-    white-space: normal !important;
-    word-break: normal !important;
-    overflow-wrap: anywhere !important;
-    writing-mode: horizontal-tb !important;
-    text-orientation: mixed !important;
-}
-
-/* main text block take full width */
-body, main, section, article, div, p {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-}
-
-/* tidy spacing for readability */
-p {
-    line-height: 1.6;
-    margin: 0 0 1rem;
 }
