@@ -47,7 +47,7 @@ p {
     color: #8fe3a2;
     text-decoration: none;
     padding: 8px 10px;
-    border: 1px solid trasparent;
+    border: none;
     font-weight: normal;
 }
 
@@ -60,7 +60,7 @@ p {
 
 
 a:link {
-    color: #c60ee7; /* normal link*/
+    color: #eb9ef9; /* normal link*/
 }
 
 a:visited {
@@ -188,7 +188,7 @@ table { width: 80%; margin: 20px auto; }
 table, th, td { border-collapse: collapse; }
 
 /* keep paragraphs readable on any device */
-.container p {max-width: 65; line-height: 1.6; margin-bottom: 1em; }
+.container p {max-width: 65px; line-height: 1.6; margin-bottom: 1em; }
 
     /*!-- Tablet (900px) -- */
     @media screen and (max-width: 900px) {
@@ -209,7 +209,7 @@ table, th, td { border-collapse: collapse; }
             height: 100vh;
             background: #111;
             padding: 20px 10px;
-            z-index: 10px;
+            z-index: 10;
         }
         .nav a {
             display: block;
@@ -361,7 +361,6 @@ video, iframe {
     color: white;
     text-align: left;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s, box-shadow 0.3;
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
