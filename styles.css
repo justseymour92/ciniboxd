@@ -44,7 +44,7 @@ p {
 }
 
 .nav a {
-    color: #8fe3a2;
+    color: #b8ffc9;
     text-decoration: none;
     padding: 8px 10px;
     border: none;
@@ -52,8 +52,8 @@ p {
 }
 
 .nav a:hover {
-    background-color: #0c1117;
-    border-color: #8fe3a2;
+    background-color: #0a0e12;
+    border-color: #b8ffc9;
     text-decoration: underline;
     
 }
@@ -81,9 +81,9 @@ a:active {
 .footer {
     text-align: center;
     padding: 10px;
-    background-color: #0c1117;
+    background-color: #0a0e12;
     margin-top: 20px;
-    color: #9fb0c1;
+    color: #b8ffc9;
 }
 
 button, input[type="submit"]{
