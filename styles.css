@@ -60,11 +60,11 @@ p {
 
 
 a:link {
-    color: #ce00f4; /* normal link*/
+    color: #0a000c; /* normal link*/
 }
 
 a:visited {
-    color: #f900ee;  /*keep viseted links same red*/
+    color: #000000;  /*keep viseted links same red*/
 }
 
 a:hover {
@@ -72,7 +72,7 @@ a:hover {
 }
 
 a:active {
-    color: #8404f0; /* when clicked*/
+    color: #000000; /* when clicked*/
 }
 .section {
     padding: 20px;
