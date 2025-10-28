@@ -461,7 +461,7 @@ video, iframe {
     padding: 14px;
     text-align: left;
     box-shadow: 0 6px 16px rgba(0,0,0,.35);
-    transition: trasform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    
 }
 .list-card:hover {
     transform: translateY(-3px);
