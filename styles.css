@@ -1,12 +1,14 @@
-
-*, *::before, *::after {
-    box-sizing: border-box
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;         /* stops horizontal scroll and right side space */
-    width: 100%;                /* ensures full width */
+    overflow-x: hidden; /* stops horizontal scroll and right side space */
+    width: 100%; /* ensures full width */
 }
 
 body {
@@ -17,7 +19,8 @@ body {
     padding: 0;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #81d895; /*green heading*/
 }
 
@@ -30,17 +33,14 @@ h1, h2 {
 }
 
 p {
-    line-height:  1.5;
-    
-    
+    line-height: 1.5;
 }
-
 
 .nav {
     display: flex;
     justify-content: center; /*centes the links*/
     gap: 15px; /* adds spacing between links */
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .nav a {
@@ -55,20 +55,18 @@ p {
     background-color: #ffffff;
     border-color: #b8ffc9;
     text-decoration: underline;
-    
 }
-
 
 a:link {
     color: #ffffff; /* normal link*/
 }
 
 a:visited {
-    color: #ffffff;  /*keep viseted links same red*/
+    color: #ffffff; /*keep viseted links same red*/
 }
 
 a:hover {
-    text-decoration:  underline;
+    text-decoration: underline;
 }
 
 a:active {
@@ -86,17 +84,19 @@ a:active {
     color: #b8ffc9;
 }
 
-button, input[type="submit"]{
-    background-color:  #8fe3a2;
+button,
+input[type="submit"] {
+    background-color: #8fe3a2;
     border: none;
     padding: 8px 12px;
-    font-weight:  bold;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 4px;
     margin-top: 8px;
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover,
+input[type="submit"]:hover {
     background-color: #6fd18a;
 }
 
@@ -110,7 +110,8 @@ label {
     margin-right: 5px;
 }
 
-input[type="text"], input[type="password"]{
+input[type="text"],
+input[type="password"] {
     padding: 6px;
     border: none;
     border-radius: 4px;
@@ -118,7 +119,9 @@ input[type="text"], input[type="password"]{
 }
 
 /*Table styling */
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #8fe3a2;
     border-collapse: collapse;
     padding: 8px;
@@ -126,54 +129,77 @@ table, th, td {
 }
 table {
     margin: 20px auto;
-    width: 80%
+    width: 80%;
 }
 
 /* keep all page content a good width width*/
 .container {
-    max-width: 1400px;      /*desktop width cap */
-    width: 100%;            /* makes sure it can fill full width if needed */
-    margin-left: auto;      /* centers the container */
-    margin-right: auto;     /* centers the containers */
-    padding: 0 1rem;     /* even spacing on both sides */
+    max-width: 1400px; /*desktop width cap */
+    width: 100%; /* makes sure it can fill full width if needed */
+    margin-left: auto; /* centers the container */
+    margin-right: auto; /* centers the containers */
+    padding: 0 1rem; /* even spacing on both sides */
     box-sizing: border-box; /*keeps padding inside the total width */
-    text-align: center;     /* centers all text inside the container */
+    text-align: center; /* centers all text inside the container */
 }
 /* keep the page the height  of the screen and push footer to the bottom */
 .container {
-    min-height: 100svh;         /* fills the full visible height */
+    min-height: 100svh; /* fills the full visible height */
     display: flex;
     flex-direction: column;
 }
 
 .footer {
-    margin-top: auto;           /* pushes footer to the bottom */
+    margin-top: auto; /* pushes footer to the bottom */
 }
-   
 
 /* readind width for long paragraphs */
 .container p {
-    max-width: 65ch;        /* 65 characters per line */
+    max-width: 65ch; /* 65 characters per line */
     line-height: 1.6;
-    margin: 0.5rem auto;    /* ceters the block its self */
-    text-align: center;     /* centres the text inside */
+    margin: 0.5rem auto; /* ceters the block its self */
+    text-align: center; /* centres the text inside */
 }
 
 /* ----- mobile and tablet responsive-------*/
 
 /* reset small quirks so centering works everywherer */
-html, body {margin: 0; padding: 0; }
-*, *::before, *::after { box-sizing: border-box; }
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 /* make images scale to the screen */
-img { max-width: 100%; height: auto; display: block; }
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 /* page container: wide on desktop, comfy on smaller screens */
-.container { max-width: 1200px; width: 100%; margin: 0; padding: 1rem 2rem; }
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 2rem;
+}
 
 /*nav: row that can wrap, links easy to tap */
-.nav { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; justify-content: center;}
-.nav a { padding: 0.45rem 0.7rem; }
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+    justify-content: center;
+}
+.nav a {
+    padding: 0.45rem 0.7rem;
+}
 
 /* login form: one row on desktop, adapts below */
 .login-form {
@@ -184,72 +210,94 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* tables well on narrow screens */
-table { width: 80%; margin: 20px auto; }
-table, th, td { border-collapse: collapse; }
+table {
+    width: 80%;
+    margin: 20px auto;
+}
+table,
+th,
+td {
+    border-collapse: collapse;
+}
 
 /* keep paragraphs readable on any device */
-.container p {max-width: 65px; line-height: 1.6; margin-bottom: 1em; }
+.container p {
+    max-width: 65px;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
 
-    /*!-- Tablet (900px) -- */
-    @media screen and (max-width: 900px) {
-        /* general sizing */
-        body { font-size: 16px; }
-        .container { max-width: 900px; padding:  1rem; }
+/*!-- Tablet (900px) -- */
+@media screen and (max-width: 900px) {
+    /* general sizing */
+    body {
+        font-size: 16px;
+    }
+    .container {
+        max-width: 900px;
+        padding: 1rem;
+    }
 
-        /* left sidebar */
-        .nav {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 180px;
-            height: 100vh;
-            background: #000000;
-            padding: 20px 10px;
-            z-index: 10;
-        }
-        .nav a {
-            display: block;
-            width: 100%;
-            padding: 10px 0;
-            color: #8fea32;
-            text-decoration: none;
-            border-bottom: 1px solid #222;
-        }
-        
-        main,
-        section,
-        .container {
-            margin-left: 190px;
-            width: calc(100% - 190px);      /* stops cutoff on right */
-        }
-        .featured-films,
-        .lists-grid,
-        .profile-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        
-        .card, .film-card, .review-vard {
-            flex: 1 1 48%;
-            max-width: 48%;
-        }
-        
-        .table-wrap { overflow-x: auto; }
+    /* left sidebar */
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 180px;
+        height: 100vh;
+        background: #000000;
+        padding: 20px 10px;
+        z-index: 10;
+    }
+    .nav a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        color: #8fea32;
+        text-decoration: none;
+        border-bottom: 1px solid #222;
+    }
 
-        
-        
-        
-        .nav a:hover { background: #e50914; color: #fff;}
+    main,
+    section,
+    .container {
+        margin-left: 190px;
+        width: calc(100% - 190px); /* stops cutoff on right */
+    }
+    .featured-films,
+    .lists-grid,
+    .profile-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .card,
+    .film-card,
+    .review-vard {
+        flex: 1 1 48%;
+        max-width: 48%;
+    }
+
+    .table-wrap {
+        overflow-x: auto;
+    }
+
+    .nav a:hover {
+        background: #e50914;
+        color: #fff;
+    }
 
     /* push content to the right side */
     main,
     section,
-    .container { margin-left: 190px; }
+    .container {
+        margin-left: 190px;
+    }
 
     .login-form {
         display: grid;
@@ -257,18 +305,29 @@ table, th, td { border-collapse: collapse; }
         gap: 0.5rem 0.75rem;
         align-items: center;
     }
-    .login-form input[type="submit"] { grid-column: 1 / -1; justify-self: start;}
-    table { width: 100%; font-size: 0.95rem; }
-    img, iframe, video {
+    .login-form input[type="submit"] {
+        grid-column: 1 / -1;
+        justify-self: start;
+    }
+    table {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+    img,
+    iframe,
+    video {
         max-width: 100%;
         height: auto;
         display: block;
-        margin: 0 auto;}           /* centers the element */
-   
-        section { padding: 0.75rem 0; }
+        margin: 0 auto;
+    } /* centers the element */
+
+    section {
+        padding: 0.75rem 0;
+    }
 }
 
-    /* -- phone (768) -- */
+/* -- phone (768) -- */
 @media screen and (max-width: 768px) {
     /* undo tablet sidebar and stack nav at top */
     .nav {
@@ -288,24 +347,39 @@ table, th, td { border-collapse: collapse; }
         padding: 10px 0;
         border-bottom: 1px solid #222;
     }
-    
+
     main,
     section,
-    .container { margin-left: auto; margin-right: auto; }
-    
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /* phone sizing */
-    .container { padding: 0.75rem;}
-    img, iframe, video { max-width: 100%; height: auto; }
-    table { width: 100%; font-size: 14px; }
-    
+    .container {
+        padding: 0.75rem;
+    }
+    img,
+    iframe,
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
 }
-
-
 
 /* desktop use most of the width */
 @media (min-width: 1200px) {
-    .container { max-width: none; padding: 0 1rem; }   /*removes cap  */
-    .section p { max-width: 90ch; }
+    .container {
+        max-width: none;
+        padding: 0 1rem;
+    } /*removes cap  */
+    .section p {
+        max-width: 90ch;
+    }
 }
 
 img {
@@ -316,19 +390,19 @@ img {
 }
 
 ul {
-    list-style-position: inside;        /* brings bullets into the text block */
-    text-align: center;                 /* centers the bullet text */
-    padding: 0;                         /* removes default left indent */
-    margin: 1rem auto;                  /* centers the whole list */
+    list-style-position: inside; /* brings bullets into the text block */
+    text-align: center; /* centers the bullet text */
+    padding: 0; /* removes default left indent */
+    margin: 1rem auto; /* centers the whole list */
 }
 
-video, iframe {
-    display: block;                     /* puts it on its own line */
-    margin: 1rem auto;                  /* centres horizontally */
-    max-width: 100%;                    /* makes it responsive */
-    height: auto;                       /* keeps proportions correct */
+video,
+iframe {
+    display: block; /* puts it on its own line */
+    margin: 1rem auto; /* centres horizontally */
+    max-width: 100%; /* makes it responsive */
+    height: auto; /* keeps proportions correct */
 }
-
 
 .featured {
     text-align: center;
@@ -346,7 +420,7 @@ video, iframe {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 /* general film card style */
@@ -407,7 +481,8 @@ video, iframe {
     border: 2px solid #333;
     box-shadow: 0 0 10px rgba(0, 255, 100, 0.2);
 }
-.film-table th, .film-table td {
+.film-table th,
+.film-table td {
     border: 1px solid #333;
     padding: 12px;
     text-align: left;
@@ -436,12 +511,14 @@ video, iframe {
 }
 
 /* lists page heading */
-.list-wrap, .lists-table-wrap {
+.list-wrap,
+.lists-table-wrap {
     max-width: 1000px;
     margin: 32px auto;
     text-align: center;
 }
-.lists-wrap h2, .lists-table-wrap h2 {
+.lists-wrap h2,
+.lists-table-wrap h2 {
     color: #9effc7;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -460,12 +537,11 @@ video, iframe {
     border-radius: 10px;
     padding: 14px;
     text-align: left;
-    box-shadow: 0 6px 16px rgba(0,0,0,.35);
-    
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 .list-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 24px rgba(0,0,0,.45);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
     border-color: #2a2a2a;
 }
 .list-card h3 {
@@ -492,7 +568,7 @@ video, iframe {
     border: 1px solid #224b3a;
     padding: 4px 8px;
     border-radius: 999px;
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 /*popular list table*/
@@ -502,9 +578,10 @@ video, iframe {
     background: #111;
     color: #eee;
     border: 2px solid #333;
-    box-shadow: 0 0 10px rgba(0,255,100,.2);
+    box-shadow: 0 0 10px rgba(0, 255, 100, 0.2);
 }
-.lists-table th, .lists-table td {
+.lists-table th,
+.lists-table td {
     border: 1px solid #333;
     padding: 12px;
     text-align: left;
@@ -515,13 +592,20 @@ video, iframe {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.lists-table tr:nth-child(even) { background: #1e1e1e; }
-.lists-table tr:hover { background: #262626; transition: background .25s; }
+.lists-table tr:nth-child(even) {
+    background: #1e1e1e;
+}
+.lists-table tr:hover {
+    background: #262626;
+    transition: background 0.25s;
+}
 
 /* responsive tweak */
 @media (max-width: 600px) {
     .lists-table th:nth-child(3),
-    .lists-table td:nth-child(3) { display: none; } /*hids films count on small screens */
+    .lists-table td:nth-child(3) {
+        display: none;
+    } /*hids films count on small screens */
 }
 
 /* center any single image and keep it responsive */
@@ -536,8 +620,8 @@ video, iframe {
 }
 /* review card width and centering */
 .review-card {
-    max-width: 900px;       /*keeps the review readable */
-    margin: 0 auto;         /* enters the card block */
+    max-width: 900px; /*keeps the review readable */
+    margin: 0 auto; /* enters the card block */
 }
 
 /* center lists with bullets */
@@ -547,7 +631,9 @@ video, iframe {
     padding: 0;
     margin: 0.75rem auto;
 }
-.center-list li::marker { color: #8fe3a2; }
+.center-list li::marker {
+    color: #8fe3a2;
+}
 
 /* tidy table in the review */
 table.score {
@@ -557,7 +643,7 @@ table.score {
 /* responsive youtube/video embed */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;     /*16.9 */
+    padding-bottom: 56.25%; /*16.9 */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -586,7 +672,6 @@ table.score {
     border: 2px solid #333;
     box-shadow: 0 0 10px rgba(0, 255, 100, 0.2);
     text-align: left;
-
 }
 
 /* header cells */
@@ -616,7 +701,10 @@ table.score {
     transition: background-color 0.3s ease;
 }
 /* profile */
-.profile-card {max-width: 900px; margin: 0 auto; }
+.profile-card {
+    max-width: 900px;
+    margin: 0 auto;
+}
 
 /* buttons used on profiles links */
 .btn {
@@ -629,7 +717,9 @@ table.score {
     border-radius: 6px;
     font-weight: 600;
 }
-.btn:hover { filter: brightness(0.95);}
+.btn:hover {
+    filter: brightness(0.95);
+}
 /* table fix */
 .table-wrap {
     width: 100%;
@@ -690,7 +780,7 @@ p {
     text-orientation: mixed !important;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .home-intro p,
     .films-intro p,
     .lists-intro p,
