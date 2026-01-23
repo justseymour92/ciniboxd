@@ -155,7 +155,7 @@ table {
 
 /* readind width for long paragraphs */
 .container p {
-    max-width: 65ch; /* 65 characters per line */
+    max-width: 100%;
     line-height: 1.6;
     margin: 0.5rem auto; /* ceters the block its self */
     text-align: center; /* centres the text inside */
