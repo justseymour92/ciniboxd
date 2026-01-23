@@ -140,7 +140,7 @@ table {
     margin-right: auto; /* centers the containers */
     padding: 0 1rem; /* even spacing on both sides */
     box-sizing: border-box; /*keeps padding inside the total width */
-    text-align: center; /* centers all text inside the container */
+    text-align: left; /*  all text inside the container is left */
 }
 /* keep the page the height  of the screen and push footer to the bottom */
 .container {
@@ -222,7 +222,7 @@ td {
 
 /* keep paragraphs readable on any device */
 .container p {
-    max-width: 65px;
+    max-width: 100%;
     line-height: 1.6;
     margin-bottom: 1em;
 }
