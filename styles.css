@@ -620,8 +620,11 @@ iframe {
 }
 /* review card width and centering */
 .review-card {
+    width: 100%;
     max-width: 900px; /*keeps the review readable */
     margin: 0 auto; /* enters the card block */
+    box-sizing: border-box;
+    padding: 0 12px;
 }
 
 /* center lists with bullets */
